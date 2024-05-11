@@ -18,7 +18,7 @@
     $ ./get_helm.sh
     ```
 
-- **Clone the repo and apply necessary YAML to create**
+- **Clone the repo and apply necessary YAML to deploy helm chart**
 
     ```bash
     $ git clone https://github.com/saurabh8809/saurabh.github.io
@@ -43,7 +43,7 @@
   ```
 
   - Verification using ArgoCD GUI
-    ```
+    ```bash
     # Get the port number on which argocd is listening
     $ kubectl  get svc -n argocd
       NAME                                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
@@ -65,4 +65,6 @@
 
     ![alt text](image-1.png)
 
+
+# You have successfully deployed NodeJS application on k8s using ArgoCD 
 
