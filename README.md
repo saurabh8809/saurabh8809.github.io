@@ -58,7 +58,7 @@
       mMY1V8iqUTdSBrd9                          # take a note of this password 
     $
     ```
-    open URL - https://<cluster_ip>:<argocd_port> and use username `admin` and password which you got in previous command.
+    open URL - https://\{cluster_ip\}:\{argocd_port\} and use username `admin` and password which you got in previous command.
     You will see a page like below 
     ![alt text](image.png)
 
