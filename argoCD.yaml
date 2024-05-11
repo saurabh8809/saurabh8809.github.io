@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-node
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    chart: hello-node
+    repoURL: https://saurabh8809.github.io/hello-node-charts/
+    targetRevision: 1.0.0
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
