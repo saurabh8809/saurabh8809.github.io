@@ -1,12 +1,6 @@
 name: Docker Image CI
 
-on:
-  push:
-    paths:
-      - ./index.js
-      - ./package-lock.json
-      - ./package.json
-      - ./Dockerfile
+on: push
 
 jobs:
   push_to_docker_hub:
