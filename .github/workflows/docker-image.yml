@@ -30,3 +30,4 @@ jobs:
         file: Dockerfile
         push: true
         tags: srbhkumar594/hello-node:latest
+        
