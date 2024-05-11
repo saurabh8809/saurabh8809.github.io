@@ -21,7 +21,7 @@
 - **Clone the repo and apply necessary YAML to deploy helm chart**
 
     ```bash
-    $ git clone https://github.com/saurabh8809/saurabh.github.io
+    $ git clone https://github.com/saurabh8809/saurabh8809.github.io.git
     $ cd saurabh8809.github.io/
     
     # Now apply argocd yaml file to install helm chart form git repo
