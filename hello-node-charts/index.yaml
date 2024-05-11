@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  hello-node:
+  - apiVersion: v2
+    appVersion: 1.1.1
+    created: "2024-05-11T06:01:18.969155971Z"
+    description: Hello Node Helm Chart
+    digest: 00d86ac593f469b88ae150e8e4c338c815498d034da893531c9f4f5d3f3d5612
+    name: hello-node
+    type: application
+    urls:
+    - hello-node-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-05-11T06:01:18.96857822Z"
