@@ -77,6 +77,7 @@
   ```
 
   Open URL - http://\{cluster_ip\}:\{nodejs_app_port\} If everything went according to plan, you should see the screen below.
+  
   ![image](https://github.com/saurabh8809/saurabh8809.github.io/assets/25630593/27757487-0d29-493b-ae47-feaf35faf96d)
 
 
