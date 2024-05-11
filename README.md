@@ -1,5 +1,3 @@
-# saurabh8809.github.io
-
 # This repository may be used to leverage ArgoCD to deploy a basic NodeJS application on your Kubernetes cluster.
 
 - **Install prerequisite before proceeding**
@@ -43,6 +41,7 @@
   ```
 
   - Verification using ArgoCD GUI
+
     ```bash
     # Get the port number on which argocd is listening
     $ kubectl  get svc -n argocd
@@ -57,7 +56,7 @@
       mMY1V8iqUTdSBrd9                          # take a note of this password 
     $
     ```
-    open URL - https://<cluster_ip>:<argocd-port> and use username `admin` and password which you got in previous command.
+    open URL - https://<cluster_ip>:<argocd_port> and use username `admin` and password which you got in previous command.
     You will see a page like below 
     ![alt text](image.png)
 
@@ -65,6 +64,21 @@
 
     ![alt text](image-1.png)
 
+- **Verify the NodeJS Application using web browser**
+
+   - Get port on which our NodeJS application is listening
+
+  ```bash
+  $ kubectl get svc -n default
+    NAMESPACE     NAME                                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+    default       hello-node                                NodePort    10.152.183.202   <none>        3000:32157/TCP               11s  # on 32157 our node application is listening
+    default       kubernetes                                ClusterIP   10.152.183.1     <none>        443/TCP                      46h
+
+  ```
+
+  open URL - http://<cluster_ip>:<nodejs_app_port> If everything went according to plan, you should see the screen below.
+
+  ![alt text](image-2.png)
+
 
 # You have successfully deployed NodeJS application on k8s using ArgoCD 
-
